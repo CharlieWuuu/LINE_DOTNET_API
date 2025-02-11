@@ -1,0 +1,25 @@
+{
+	"richMenuId": "richmenu-07bd5e947f3df977c2d509dce776a12e",
+	"size": {
+		"width": 800,
+		"height": 250
+	},
+	"selected": true,
+	"name": "richmenu_subscription",
+	"chatBarText": "圖文選單",
+	"areas": [
+		{
+			"bounds": {
+				"x": 0,
+				"y": 0,
+				"width": 800,
+				"height": 250
+			},
+			"action": {
+				"type": "uri",
+				"label": "Tap subscription",
+				"uri": "https://liff.line.me/2006807429-YpKnwjVL"
+			}
+		}
+	]
+}

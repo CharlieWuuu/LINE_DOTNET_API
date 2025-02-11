@@ -1,0 +1,20 @@
+{
+	"Messages": [
+		{
+			"Type": "text",
+			"Text": "$ 表情符號文字測試訊息 $ ?",
+			"Emojis": [
+				{
+					"Index": 0,
+					"ProductID": "5ac1bfd5040ab15980c9b435",
+					"EmojiId": "003"
+				},
+				{
+					"Index": 13,
+					"ProductID": "5ac1bfd5040ab15980c9b435",
+					"EmojiId": "004"
+				}
+			]
+		}
+	]
+}

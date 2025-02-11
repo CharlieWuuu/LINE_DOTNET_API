@@ -1,0 +1,12 @@
+{
+	"to": [
+		"U4af4980629...",
+		"U0c229f96c4..."
+	],
+	"messages": [
+		{
+			"type": "text",
+			"text": "Hello, world"
+		}
+	]
+}

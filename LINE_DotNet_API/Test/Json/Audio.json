@@ -1,0 +1,9 @@
+{
+	"Messages": [
+		{
+			"type": "audio",
+			"originalContentUrl": "https://example.com/original.m4a",
+			"duration": 60000
+		}
+	]
+}

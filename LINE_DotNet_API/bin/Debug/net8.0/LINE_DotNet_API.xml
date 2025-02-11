@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LINE_DotNet_API</name>
+    </assembly>
+    <members>
+        <member name="M:LINE_DotNet_API.Controllers.FileController.GetImagemapImage(System.String,System.String)">
+            <summary>
+            Only for Imagemap message 讀取圖片
+            </summary>
+            <param name="folderName">檔案名稱</param>
+            <param name="imageSize">圖片尺寸</param>
+            <returns></returns>
+        </member>
+        <member name="M:LINE_DotNet_API.Controllers.LineBotController.Webhook(LINE_DotNet_API.Dtos.WebhookRequestBodyDto)">
+            <summary>偵測使用者行為，並顯示在終端機；若為訊息則會自動回覆</summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LINE_DotNet_API.Controllers.LineBotController.Broadcast(System.String,System.Object)">
+            <summary>對所有用戶廣播訊息</summary>
+            <param name="messageType">訊息類型，範例：text </param>
+            <param name="body">要傳送的訊息</param>
+        </member>
+        <member name="M:LINE_DotNet_API.Controllers.LineBotController.Multicast(System.String,System.Object)">
+            <summary>分眾傳訊息</summary>
+        </member>
+        <member name="M:LINE_DotNet_API.Services.LineBotService.BroadcastMessageHandler(System.String,System.Object)">
+            <summary>
+            接收到廣播請求時，在將請求傳至 Line 前多一層處理，依據收到的 messageType 將 messages 轉換成正確的型別，這樣 Json 轉換時才能正確轉換。
+            </summary>
+            <param name="messageType"></param>
+            <param name="requestBody"></param>
+        </member>
+        <member name="M:LINE_DotNet_API.Services.LineBotService.BroadcastMessage``1(LINE_DotNet_API.Dtos.BroadcastMessageRequestDto{``0})">
+            <summary>
+            將廣播訊息請求送到 Line
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="request"></param>
+        </member>
+        <member name="M:LINE_DotNet_API.Services.LineBotService.MulticastMessageHandler(System.String,System.Object)">
+            <summary>
+            接收到廣播請求時，在將請求傳至 Line 前多一層處理，依據收到的 messageType 將 messages 轉換成正確的型別，這樣 Json 轉換時才能正確轉換。
+            </summary>
+            <param name="messageType"></param>
+            <param name="requestBody"></param>
+        </member>
+        <member name="M:LINE_DotNet_API.Services.LineBotService.MulticastMessage``1(LINE_DotNet_API.Dtos.MulticastMessageRequestDto{``0})">
+            <summary>
+            將分群訊息請求送到 Line
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="request"></param>
+        </member>
+        <member name="M:LINE_DotNet_API.Services.LineBotService.ReplyMessageHandler``1(System.String,LINE_DotNet_API.Dtos.ReplyMessageRequestDto{``0})">
+            <summary>
+            接收到回覆請求時，在將請求傳至 Line 前多一層處理(目前為預留)
+            </summary>
+            <param name="messageType"></param>
+            <param name="requestBody"></param>
+        </member>
+        <member name="M:LINE_DotNet_API.Services.LineBotService.ReplyMessage``1(LINE_DotNet_API.Dtos.ReplyMessageRequestDto{``0})">
+            <summary>
+            將回覆訊息請求送到 Line
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="request"></param>
+        </member>
+        <member name="T:LINE_DotNet_API.Dtos.WebhookRequestBodyDto">
+            <summary>
+            對應 LINE 訊息的完整結構
+            </summary>
+        </member>
+        <member name="T:userDataDto">
+            <summary>
+            代表使用者資訊
+            </summary>
+            
+        </member>
+        <member name="T:userDataDto.UserProfileDto">
+            <summary>
+            使用者基本資訊
+            </summary>
+        </member>
+        <member name="P:userDataDto.UserProfileDto.UserId">
+            <summary>
+            使用者的唯一識別碼
+            </summary>
+        </member>
+        <member name="T:userDataDto.idTokenProfileDto">
+            <summary>
+            使用者其他資訊
+            </summary>
+        </member>
+        <member name="T:userDataDto.environmentDto">
+            <summary>
+            使用者登入環境
+            </summary>
+        </member>
+    </members>
+</doc>

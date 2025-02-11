@@ -1,0 +1,121 @@
+{
+	"richMenuId": "richmenu-f2713a4ee65b28c4dbc09200df377aa1",
+	"size": {
+		"width": 2500,
+		"height": 1700
+	},
+	"selected": true,
+	"name": "richmenu_big_1",
+	"chatBarText": "點擊開啟 richMenu",
+	"areas": [
+		{
+			"bounds": {
+				"x": 1255,
+				"y": 10,
+				"width": 1235,
+				"height": 258
+			},
+			"action": {
+				"type": "richmenuswitch",
+				"richMenuAliasId": "alias1",
+				"data": "switch to alias2"
+			}
+		},
+		{
+			"bounds": {
+				"x": 10,
+				"y": 278,
+				"width": 612,
+				"height": 709
+			},
+			"action": {
+				"type": "message",
+				"text": "A"
+			}
+		},
+		{
+			"bounds": {
+				"x": 632,
+				"y": 278,
+				"width": 612,
+				"height": 709
+			},
+			"action": {
+				"type": "message",
+				"text": "B"
+			}
+		},
+		{
+			"bounds": {
+				"x": 1254,
+				"y": 278,
+				"width": 612,
+				"height": 709
+			},
+			"action": {
+				"type": "message",
+				"text": "C"
+			}
+		},
+		{
+			"bounds": {
+				"x": 1876,
+				"y": 278,
+				"width": 612,
+				"height": 709
+			},
+			"action": {
+				"type": "message",
+				"text": "D"
+			}
+		},
+		{
+			"bounds": {
+				"x": 10,
+				"y": 997,
+				"width": 612,
+				"height": 709
+			},
+			"action": {
+				"type": "message",
+				"text": "E"
+			}
+		},
+		{
+			"bounds": {
+				"x": 632,
+				"y": 997,
+				"width": 612,
+				"height": 709
+			},
+			"action": {
+				"type": "message",
+				"text": "F"
+			}
+		},
+		{
+			"bounds": {
+				"x": 1254,
+				"y": 997,
+				"width": 612,
+				"height": 709
+			},
+			"action": {
+				"type": "message",
+				"text": "G"
+			}
+		},
+		{
+			"bounds": {
+				"x": 1876,
+				"y": 997,
+				"width": 612,
+				"height": 709
+			},
+			"action": {
+				"type": "message",
+				"text": "H"
+			}
+		}
+	]
+}

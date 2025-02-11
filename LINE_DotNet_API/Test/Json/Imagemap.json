@@ -1,0 +1,55 @@
+{
+	"Messages": [
+		{
+			"Type": "imagemap",
+			"BaseUrl": "https://00ae-211-72-13-8.ngrok-free.app/api/File/UploadFiles/ImagemapImages/DemoImage",
+			"AltText": "This is an imagemap",
+			"BaseSize": {
+				"width": 1040,
+				"Height": 1040
+			},
+			"Actions": [
+				{
+					"Type": "message",
+					"Text": "查看商品1",
+					"Area": {
+						"X": 0,
+						"Y": 0,
+						"Width": 520,
+						"Height": 520
+					}
+				},
+				{
+					"Type": "uri",
+					"LinkUri": "https://www.appx.com.tw/newcourse",
+					"Area": {
+						"X": 520,
+						"Y": 0,
+						"Width": 520,
+						"Height": 520
+					}
+				},
+				{
+					"Type": "uri",
+					"LinkUri": "https://www.appx.com.tw/lecture",
+					"Area": {
+						"X": 0,
+						"Y": 520,
+						"Width": 520,
+						"Height": 520
+					}
+				},
+				{
+					"Type": "message",
+					"Text": "查看商品4",
+					"Area": {
+						"X": 520,
+						"Y": 520,
+						"Width": 520,
+						"Height": 520
+					}
+				}
+			]
+		}
+	]
+}
