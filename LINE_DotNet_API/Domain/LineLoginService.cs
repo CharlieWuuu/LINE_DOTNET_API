@@ -18,11 +18,11 @@ namespace LINE_DotNet_API.Domain
         private readonly string tokenUrl = "https://api.line.me/oauth2/v2.1/token";
         private readonly string profileUrl = "https://api.line.me/v2/profile";
         private readonly string idTokenProfileUrl = "https://api.line.me/oauth2/v2.1/verify/?id_token={0}&client_id={1}";
-        private readonly ConnectionStrings _connectionStrings;
+        // private readonly ConnectionStrings _connectionStrings;
 
         public LineLoginService(ConnectionStrings connectionStrings)
         {
-            _connectionStrings = connectionStrings;
+            // _connectionStrings = connectionStrings;
         }
 
         // 回傳 line authorization url
@@ -75,69 +75,69 @@ namespace LINE_DotNet_API.Domain
             return dto;
         }
 
-        public async Task<string> CheckAndSaveUser(userDataDto userData)
-        {
-            string checkUserQuery = @"SELECT COUNT(*) FROM [userProfile] WHERE [userId] = @userId";
-            string insertUserQuery = @"
-        INSERT INTO [userProfile] ([userId], [displayName], [pictureUrl], [statusMessage], [CREATE_TIME])
-        VALUES (@userId, @displayName, @pictureUrl, @statusMessage, GETDATE())";
-            string insertLoginLogQuery = @"
-        INSERT INTO [idTokenProfile] ([userId], [amr], [aud], [email], [exp], [iat], [iss], [name], [picture], [sub], [isInClient], [language], [lineVersion], [os], [version], [LOGIN_TIME])
-        VALUES (@userId, @amr, @aud, @email, @exp, @iat, @iss, @name, @picture, @sub, @isInClient, @language, @lineVersion, @os, @version, GETDATE())";
+        //public async Task<string> CheckAndSaveUser(userDataDto userData)
+        //{
+        //    string checkUserQuery = @"SELECT COUNT(*) FROM [userProfile] WHERE [userId] = @userId";
+        //    string insertUserQuery = @"
+        //INSERT INTO [userProfile] ([userId], [displayName], [pictureUrl], [statusMessage], [CREATE_TIME])
+        //VALUES (@userId, @displayName, @pictureUrl, @statusMessage, GETDATE())";
+        //    string insertLoginLogQuery = @"
+        //INSERT INTO [idTokenProfile] ([userId], [amr], [aud], [email], [exp], [iat], [iss], [name], [picture], [sub], [isInClient], [language], [lineVersion], [os], [version], [LOGIN_TIME])
+        //VALUES (@userId, @amr, @aud, @email, @exp, @iat, @iss, @name, @picture, @sub, @isInClient, @language, @lineVersion, @os, @version, GETDATE())";
 
-            using (var connection = new SqlConnection(_connectionStrings.DefaultConnection))
-            {
-                try
-                {
-                    await connection.OpenAsync();
+        //    using (var connection = new SqlConnection(_connectionStrings.DefaultConnection))
+        //    {
+        //        try
+        //        {
+        //            await connection.OpenAsync();
 
-                    // 檢查 userProfile 表
-                    using (var checkCommand = new SqlCommand(checkUserQuery, connection))
-                    {
-                        checkCommand.Parameters.Add(new SqlParameter("@userId", userData.userProfile.UserId));
-                        int userCount = (int)await checkCommand.ExecuteScalarAsync();
+        //            // 檢查 userProfile 表
+        //            using (var checkCommand = new SqlCommand(checkUserQuery, connection))
+        //            {
+        //                checkCommand.Parameters.Add(new SqlParameter("@userId", userData.userProfile.UserId));
+        //                int userCount = (int)await checkCommand.ExecuteScalarAsync();
 
-                        // 如果 userProfile 不存在，插入新資料
-                        if (userCount == 0)
-                        {
-                            using (var insertCommand = new SqlCommand(insertUserQuery, connection))
-                            {
-                                insertCommand.Parameters.Add(new SqlParameter("@userId", userData.userProfile.UserId));
-                                insertCommand.Parameters.Add(new SqlParameter("@displayName", userData.userProfile.DisplayName ?? (object)DBNull.Value));
-                                insertCommand.Parameters.Add(new SqlParameter("@pictureUrl", userData.userProfile.PictureUrl ?? (object)DBNull.Value));
-                                insertCommand.Parameters.Add(new SqlParameter("@statusMessage", userData.userProfile.StatusMessage ?? (object)DBNull.Value));
-                                await insertCommand.ExecuteNonQueryAsync();
-                            }
-                        }
-                    }
+        //                // 如果 userProfile 不存在，插入新資料
+        //                if (userCount == 0)
+        //                {
+        //                    using (var insertCommand = new SqlCommand(insertUserQuery, connection))
+        //                    {
+        //                        insertCommand.Parameters.Add(new SqlParameter("@userId", userData.userProfile.UserId));
+        //                        insertCommand.Parameters.Add(new SqlParameter("@displayName", userData.userProfile.DisplayName ?? (object)DBNull.Value));
+        //                        insertCommand.Parameters.Add(new SqlParameter("@pictureUrl", userData.userProfile.PictureUrl ?? (object)DBNull.Value));
+        //                        insertCommand.Parameters.Add(new SqlParameter("@statusMessage", userData.userProfile.StatusMessage ?? (object)DBNull.Value));
+        //                        await insertCommand.ExecuteNonQueryAsync();
+        //                    }
+        //                }
+        //            }
 
-                    // 插入登入紀錄到 idTokenProfile 表
-                    using (var insertLoginCommand = new SqlCommand(insertLoginLogQuery, connection))
-                    {
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@userId", userData.userProfile.UserId));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@amr", userData.idTokenProfile.amr?.FirstOrDefault() ?? (object)DBNull.Value));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@aud", userData.idTokenProfile.aud ?? (object)DBNull.Value));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@email", userData.idTokenProfile.email ?? (object)DBNull.Value));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@exp", userData.idTokenProfile.exp));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@iat", userData.idTokenProfile.iat));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@iss", userData.idTokenProfile.iss ?? (object)DBNull.Value));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@name", userData.idTokenProfile.name ?? (object)DBNull.Value));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@picture", userData.idTokenProfile.picture ?? (object)DBNull.Value));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@sub", userData.idTokenProfile.sub ?? (object)DBNull.Value));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@isInClient", userData.environment.isInClient));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@language", userData.environment.language ?? (object)DBNull.Value));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@lineVersion", userData.environment.lineVersion ?? (object)DBNull.Value));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@os", userData.environment.os ?? (object)DBNull.Value));
-                        insertLoginCommand.Parameters.Add(new SqlParameter("@version", userData.environment.version ?? (object)DBNull.Value));
-                        await insertLoginCommand.ExecuteNonQueryAsync();
-                    }
-                    return "Success";
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception("Database error", ex);
-                }
-            }
-        }
+        //            // 插入登入紀錄到 idTokenProfile 表
+        //            using (var insertLoginCommand = new SqlCommand(insertLoginLogQuery, connection))
+        //            {
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@userId", userData.userProfile.UserId));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@amr", userData.idTokenProfile.amr?.FirstOrDefault() ?? (object)DBNull.Value));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@aud", userData.idTokenProfile.aud ?? (object)DBNull.Value));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@email", userData.idTokenProfile.email ?? (object)DBNull.Value));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@exp", userData.idTokenProfile.exp));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@iat", userData.idTokenProfile.iat));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@iss", userData.idTokenProfile.iss ?? (object)DBNull.Value));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@name", userData.idTokenProfile.name ?? (object)DBNull.Value));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@picture", userData.idTokenProfile.picture ?? (object)DBNull.Value));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@sub", userData.idTokenProfile.sub ?? (object)DBNull.Value));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@isInClient", userData.environment.isInClient));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@language", userData.environment.language ?? (object)DBNull.Value));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@lineVersion", userData.environment.lineVersion ?? (object)DBNull.Value));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@os", userData.environment.os ?? (object)DBNull.Value));
+        //                insertLoginCommand.Parameters.Add(new SqlParameter("@version", userData.environment.version ?? (object)DBNull.Value));
+        //                await insertLoginCommand.ExecuteNonQueryAsync();
+        //            }
+        //            return "Success";
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            throw new Exception("Database error", ex);
+        //        }
+        //    }
+        //}
     }
 }

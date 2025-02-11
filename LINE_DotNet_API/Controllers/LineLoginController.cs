@@ -9,11 +9,11 @@ namespace LINE_DotNet_API.Controllers
 	public class LineLoginController : ControllerBase
 	{
 		private readonly LineLoginService _lineLoginService;
-        private readonly ConnectionStrings _connectionStrings;
-        public LineLoginController(ConnectionStrings connectionStrings)
+		// private readonly ConnectionStrings _connectionStrings;
+		public LineLoginController(ConnectionStrings connectionStrings)
 		{
 			_lineLoginService = new LineLoginService(connectionStrings);
-        }
+		}
 
 		// 取得 Line Login 網址
 		[HttpGet("Url")]
@@ -43,11 +43,11 @@ namespace LINE_DotNet_API.Controllers
 			return await _lineLoginService.GetUserProfileByIdToken(idToken);
 		}
 
-        // 使用 id token 取得 user profile
-        [HttpPost("CheckAndSaveUser")]
-        public async Task<string> CheckAndSaveUser(userDataDto userData)
-        {
-            return await _lineLoginService.CheckAndSaveUser(userData);
-        }
-    }
+		//// 使用 id token 取得 user profile
+		//[HttpPost("CheckAndSaveUser")]
+		//public async Task<string> CheckAndSaveUser(userDataDto userData)
+		//{
+		//	return await _lineLoginService.CheckAndSaveUser(userData);
+		//}
+	}
 }

@@ -13,10 +13,6 @@ builder.Services.AddCors(option =>
     });
 });
 
-//
-builder.Services.AddSingleton(sp =>
-    builder.Configuration.GetSection("ConnectionStrings").Get<ConnectionStrings>());
-
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -36,18 +32,34 @@ builder.Services.AddSwaggerGen(c =>
     c.IncludeXmlComments(xmlPath, includeControllerXmlComments: true);
 });
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    var certPath = Environment.GetEnvironmentVariable("ASPNETCORE_Kestrel__Certificates__Default__Path");
+    var certPassword = Environment.GetEnvironmentVariable("ASPNETCORE_Kestrel__Certificates__Default__Password");
+
+    options.ListenAnyIP(8080); // HTTP
+    options.ListenAnyIP(8081, listenOptions =>
+    {
+        if (!string.IsNullOrEmpty(certPath) && !string.IsNullOrEmpty(certPassword))
+        {
+            listenOptions.UseHttps(certPath, certPassword);
+        }
+    });
+});
+
+
 //builder.WebHost.UseKestrel(options =>
 //{
 //    options.ListenAnyIP(80); // 啟用 HTTP 監聽
 //});
 
-//builder.WebHost.ConfigureKestrel(options =>
-//{
-//    options.ListenAnyIP(443, listenOptions =>
-//    {
-//        listenOptions.UseHttps("./LINE_DotNet_API.pfx", "your_password");
-//    });
-//});
+// builder.WebHost.ConfigureKestrel(options =>
+// {
+//     options.ListenAnyIP(443, listenOptions =>
+//     {
+//         listenOptions.UseHttps("./LINE_DotNet_API.pfx", "your_password");
+//     });
+// });
 
 //builder.WebHost.ConfigureKestrel(options =>
 //{
