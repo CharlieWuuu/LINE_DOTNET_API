@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sR14rptCz3c=",
+  "dgSpecHash": "UerLsBX5eaA=",
   "success": true,
-  "projectFilePath": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\line_dotnet_api\\LINE_DotNet_API.csproj",
+  "projectFilePath": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\LINE_DotNet_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CharlieWu\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\CharlieWu\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

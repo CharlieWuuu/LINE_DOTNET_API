@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\line_dotnet_api\\LINE_DotNet_API.csproj": {}
+    "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\LINE_DotNet_API.csproj": {}
   },
   "projects": {
-    "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\line_dotnet_api\\LINE_DotNet_API.csproj": {
+    "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\LINE_DotNet_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\line_dotnet_api\\LINE_DotNet_API.csproj",
+        "projectUniqueName": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\LINE_DotNet_API.csproj",
         "projectName": "LINE_DotNet_API",
-        "projectPath": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\line_dotnet_api\\LINE_DotNet_API.csproj",
+        "projectPath": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\LINE_DotNet_API.csproj",
         "packagesPath": "C:\\Users\\CharlieWu\\.nuget\\packages\\",
-        "outputPath": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\line_dotnet_api\\obj\\",
+        "outputPath": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CharlieWu\\AppData\\Roaming\\NuGet\\NuGet.Config",
