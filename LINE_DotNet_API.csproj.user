@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ActiveDebugProfile>Container (Dockerfile)</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\Properties\PublishProfiles\registry.hub.docker.com.pubxml</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+</Project>
