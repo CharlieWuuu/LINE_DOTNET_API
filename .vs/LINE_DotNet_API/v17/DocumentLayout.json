@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\domain\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\domain\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\domain\\lineloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\domain\\lineloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\dtos\\configuration\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\dtos\\configuration\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\controllers\\linelogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\controllers\\linelogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\domain\\lineloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\domain\\lineloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\dtos\\appdbcontext\\subscribe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\dtos\\appdbcontext\\subscribe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\dtos\\appdbcontext\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\dtos\\appdbcontext\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\dtos\\appdbcontext\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\dtos\\appdbcontext\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|d:\\03learning\\57_line_dotnet\\line_dotnet_api\\line_dotnet_api\\dtos\\actions\\actiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DCBD6B6-77EE-4DB2-8717-C4FB905E321F}|LINE_DotNet_API\\LINE_DotNet_API.csproj|solutionrelative:line_dotnet_api\\dtos\\actions\\actiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,7 +41,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 1075,
+          "DockedHeight": 844,
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -46,80 +54,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SubscriptionController.cs",
-              "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Controllers\\SubscriptionController.cs",
-              "RelativeDocumentMoniker": "LINE_DotNet_API\\Controllers\\SubscriptionController.cs",
-              "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Controllers\\SubscriptionController.cs",
-              "RelativeToolTip": "LINE_DotNet_API\\Controllers\\SubscriptionController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAApwBYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T07:31:18.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SubscriptionService.cs",
-              "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Domain\\SubscriptionService.cs",
-              "RelativeDocumentMoniker": "LINE_DotNet_API\\Domain\\SubscriptionService.cs",
-              "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Domain\\SubscriptionService.cs",
-              "RelativeToolTip": "LINE_DotNet_API\\Domain\\SubscriptionService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHYAAAB8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T07:31:01.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LineLoginService.cs",
-              "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Domain\\LineLoginService.cs",
-              "RelativeDocumentMoniker": "LINE_DotNet_API\\Domain\\LineLoginService.cs",
-              "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Domain\\LineLoginService.cs",
-              "RelativeToolTip": "LINE_DotNet_API\\Domain\\LineLoginService.cs",
-              "ViewState": "AQIAAH8AAAAAAAAAAAAtwIoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T07:30:34.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "LineLoginController.cs",
               "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Controllers\\LineLoginController.cs",
               "RelativeDocumentMoniker": "LINE_DotNet_API\\Controllers\\LineLoginController.cs",
               "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Controllers\\LineLoginController.cs",
               "RelativeToolTip": "LINE_DotNet_API\\Controllers\\LineLoginController.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAApwC0AAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T07:30:25.123Z",
+              "WhenOpened": "2025-02-24T08:45:04.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dockerfile",
-              "RelativeDocumentMoniker": "LINE_DotNet_API\\Dockerfile",
-              "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dockerfile",
-              "RelativeToolTip": "LINE_DotNet_API\\Dockerfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-11T05:55:11.366Z",
+              "DocumentIndex": 0,
+              "Title": "LineLoginService.cs",
+              "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Domain\\LineLoginService.cs",
+              "RelativeDocumentMoniker": "LINE_DotNet_API\\Domain\\LineLoginService.cs",
+              "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Domain\\LineLoginService.cs",
+              "RelativeToolTip": "LINE_DotNet_API\\Domain\\LineLoginService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAqwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T09:06:33.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConnectionStrings.cs",
+              "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dtos\\Configuration\\ConnectionStrings.cs",
+              "RelativeDocumentMoniker": "LINE_DotNet_API\\Dtos\\Configuration\\ConnectionStrings.cs",
+              "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dtos\\Configuration\\ConnectionStrings.cs",
+              "RelativeToolTip": "LINE_DotNet_API\\Dtos\\Configuration\\ConnectionStrings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T08:45:23.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ActionDtos.cs",
+              "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dtos\\Actions\\ActionDtos.cs",
+              "RelativeDocumentMoniker": "LINE_DotNet_API\\Dtos\\Actions\\ActionDtos.cs",
+              "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dtos\\Actions\\ActionDtos.cs",
+              "RelativeToolTip": "LINE_DotNet_API\\Dtos\\Actions\\ActionDtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T07:01:06.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dtos\\AppDbContext\\UserLogin.cs",
+              "RelativeDocumentMoniker": "LINE_DotNet_API\\Dtos\\AppDbContext\\UserLogin.cs",
+              "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dtos\\AppDbContext\\UserLogin.cs",
+              "RelativeToolTip": "LINE_DotNet_API\\Dtos\\AppDbContext\\UserLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T07:00:20.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dtos\\AppDbContext\\User.cs",
+              "RelativeDocumentMoniker": "LINE_DotNet_API\\Dtos\\AppDbContext\\User.cs",
+              "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dtos\\AppDbContext\\User.cs",
+              "RelativeToolTip": "LINE_DotNet_API\\Dtos\\AppDbContext\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T07:00:18.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Subscribe.cs",
+              "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dtos\\AppDbContext\\Subscribe.cs",
+              "RelativeDocumentMoniker": "LINE_DotNet_API\\Dtos\\AppDbContext\\Subscribe.cs",
+              "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Dtos\\AppDbContext\\Subscribe.cs",
+              "RelativeToolTip": "LINE_DotNet_API\\Dtos\\AppDbContext\\Subscribe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T07:00:15.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Program.cs",
               "RelativeDocumentMoniker": "LINE_DotNet_API\\Program.cs",
               "ToolTip": "D:\\03Learning\\57_LINE_DotNet\\LINE_DotNet_API\\LINE_DotNet_API\\Program.cs",
               "RelativeToolTip": "LINE_DotNet_API\\Program.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAswGcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T05:53:59.447Z",
+              "WhenOpened": "2025-02-24T07:00:01.979Z",
               "EditorCaption": ""
             }
           ]

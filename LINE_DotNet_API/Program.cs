@@ -1,10 +1,21 @@
-using LINE_DotNet_API.Domain;
-using LINE_DotNet_API.Dtos;
 using LINE_DotNet_API.Providers;
+using LINE_DotNet_API.Dtos;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
+using LINE_DotNet_API.Domain;
+using LINE_DotNet_API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(connectionString));
+
+builder.Services.AddScoped<LineLoginService>(); // 註冊 LineLoginService
+builder.Services.AddScoped<SubscriptionService>(); // 註冊 SubscriptionService
+
 builder.Services.AddCors(option =>
 {
     option.AddPolicy(name: "policy", policy =>
@@ -13,11 +24,13 @@ builder.Services.AddCors(option =>
     });
 });
 
-
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = null; // 保持原始大小寫
+});
 builder.Services.AddSingleton<JsonProvider>();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -47,28 +60,6 @@ builder.WebHost.ConfigureKestrel(options =>
     });
 });
 
-
-//builder.WebHost.UseKestrel(options =>
-//{
-//    options.ListenAnyIP(80); // 啟用 HTTP 監聽
-//});
-
-// builder.WebHost.ConfigureKestrel(options =>
-// {
-//     options.ListenAnyIP(443, listenOptions =>
-//     {
-//         listenOptions.UseHttps("./LINE_DotNet_API.pfx", "your_password");
-//     });
-// });
-
-//builder.WebHost.ConfigureKestrel(options =>
-//{
-//    options.ListenAnyIP(8080); // 讓 asp.net core 在 docker 內部監聽所有 ip
-//});
-
-// 讓 ASP.NET Core 正確監聽所有 IP（解決 Docker 無法存取問題）
-//builder.WebHost.UseUrls("http://+:8080");
-
 var app = builder.Build();
 app.UseCors("policy");
 
@@ -85,10 +76,6 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 }
 
 app.UseRouting();
-
-
-//app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
 app.UseStaticFiles(new StaticFileOptions

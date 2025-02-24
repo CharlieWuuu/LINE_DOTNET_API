@@ -1,31 +1,35 @@
+using LINE_DotNet_API.Domain;
 using LINE_DotNet_API.Dtos;
 using LINE_DotNet_API.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace LINE_DotNet_API.Controllers
 {
-	[Route("api/[Controller]")]
-	[ApiController]
-	public class SubscriptionController : ControllerBase
-	{
-		private readonly SubscriptionService _subscribeService;
-		// private readonly ConnectionStrings _connectionStrings;
-		public SubscriptionController(ConnectionStrings connectionStrings)
-		{
-			_subscribeService = new SubscriptionService(connectionStrings);
-		}
+    [Route("api/[controller]")]
+    [ApiController]
+    public class SubscriptionController : ControllerBase
+    {
+        private readonly SubscriptionService _subscribeService;
 
-		//// ���o�Τ�q�\��T
-		//[HttpPost("Fetch")]
-		//public async Task<SubscriptionDto> Fetch(SubscriptionDto dto)
-		//{
-		//	return await _subscribeService.Fetch(dto);
-		//}
+        public SubscriptionController(SubscriptionService subscribeService)
+        {
+            _subscribeService = subscribeService ?? throw new ArgumentNullException(nameof(subscribeService));
+        }
 
-		[HttpPost("Update")]
-		public async Task Update(SubscriptionDto dto)
-		{
-			await _subscribeService.Update(dto);
-		}
-	}
+        // 取得訂閱資訊
+        [HttpPost("Fetch")]
+        public async Task<SubscriptionDto> Fetch([FromBody] SUBSCRIBE dto)
+        {
+            return await _subscribeService.Fetch(dto);
+        }
+
+        // 更新訂閱資訊
+        [HttpPost("Update")]
+        public async Task<IActionResult> Update([FromBody] SUBSCRIBE subscribe)
+        {
+            await _subscribeService.Update(subscribe);
+            return Ok();
+        }
+    }
 }

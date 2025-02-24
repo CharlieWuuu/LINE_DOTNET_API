@@ -1,6 +1,7 @@
 using LINE_DotNet_API.Domain;
 using LINE_DotNet_API.Dtos;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace LINE_DotNet_API.Controllers
 {
@@ -8,15 +9,15 @@ namespace LINE_DotNet_API.Controllers
 	[ApiController]
 	public class LineLoginController : ControllerBase
 	{
-		private readonly LineLoginService _lineLoginService;
-		// private readonly ConnectionStrings _connectionStrings;
-		public LineLoginController(ConnectionStrings connectionStrings)
-		{
-			_lineLoginService = new LineLoginService(connectionStrings);
-		}
+        private readonly LineLoginService _lineLoginService;
 
-		// 取得 Line Login 網址
-		[HttpGet("Url")]
+        public LineLoginController(LineLoginService lineLoginService)
+        {
+            _lineLoginService = lineLoginService ?? throw new ArgumentNullException(nameof(lineLoginService));
+        }
+
+        // 取得 Line Login 網址
+        [HttpGet("Url")]
 		public string GetLoginUrl([FromQuery] string redirectUrl)
 		{
 			return _lineLoginService.GetLoginUrl(redirectUrl);
@@ -43,11 +44,11 @@ namespace LINE_DotNet_API.Controllers
 			return await _lineLoginService.GetUserProfileByIdToken(idToken);
 		}
 
-		//// 使用 id token 取得 user profile
-		//[HttpPost("CheckAndSaveUser")]
-		//public async Task<string> CheckAndSaveUser(userDataDto userData)
-		//{
-		//	return await _lineLoginService.CheckAndSaveUser(userData);
-		//}
+		// 使用 id token 取得 user profile
+		[HttpPost("CheckAndSaveUser")]
+		public async Task<string> CheckAndSaveUser(USER userData)
+		{
+			return await _lineLoginService.CheckAndSaveUser(userData);
+		}
 	}
 }

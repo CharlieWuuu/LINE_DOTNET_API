@@ -1,132 +1,87 @@
-using System;
-using System.Net.Http.Headers;
-using System.Text;
+using System.Threading.Tasks;
 using LINE_DotNet_API.Dtos;
-using LINE_DotNet_API.Enum;
-using LINE_DotNet_API.Providers;
-using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace LINE_DotNet_API.Services
 {
     public class SubscriptionService
     {
-        // private readonly ConnectionStrings _connectionStrings;
+        private readonly AppDbContext _context;
 
-        public SubscriptionService(ConnectionStrings connectionStrings)
+        public SubscriptionService(AppDbContext context)
         {
-            //_connectionStrings = connectionStrings;
+            _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        //public async Task<SubscriptionDto> Fetch(SubscriptionDto dto)
-        //{
-        //    string checkSubscriptionQuery = @"SELECT * FROM [SUBSCRIPTION] WHERE [USER_ID] = @USER_ID";
-        //    using (var connection = new SqlConnection(_connectionStrings.DefaultConnection))
-        //    {
-        //        try
-        //        {
-        //            await connection.OpenAsync();
-
-        //            // 查詢 subscription 表
-        //            using (var checkCommand = new SqlCommand(checkSubscriptionQuery, connection))
-        //            {
-        //                checkCommand.Parameters.Add(new SqlParameter("@USER_ID", dto.USER_ID));
-
-        //                using (var reader = await checkCommand.ExecuteReaderAsync())
-        //                {
-        //                    // 如果找不到記錄，返回預設值
-        //                    if (!reader.HasRows)
-        //                    {
-        //                        return new SubscriptionDto()
-        //                        {
-        //                            USER_ID = dto.USER_ID,
-        //                            OCEAN_POLLUTION = 0,
-        //                            OIL_REPORT = 0,
-        //                            SATELLITE_IMAGES = 0
-        //                        };
-        //                    }
-
-        //                    // 如果找到記錄，讀取資料並返回
-        //                    if (await reader.ReadAsync())
-        //                    {
-        //                        return new SubscriptionDto()
-        //                        {
-        //                            USER_ID = dto.USER_ID,
-        //                            OCEAN_POLLUTION = (int)reader["OCEAN_POLLUTION"],
-        //                            OIL_REPORT = (int)reader["OIL_REPORT"],
-        //                            SATELLITE_IMAGES = (int)reader["SATELLITE_IMAGES"],
-        //                        };
-        //                    }
-        //                }
-        //            }
-
-        //            // 如果到這裡，應該是邏輯上有問題，拋出例外
-        //            throw new Exception("Unexpected state: user record should exist but was not found.");
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            throw new Exception("Database error", ex);
-        //        }
-        //    }
-        //}
-
-        public async Task Update(SubscriptionDto dto)
+        // 取得訂閱資訊
+        public async Task<SubscriptionDto> Fetch(SUBSCRIBE dto)
         {
-            string checkSubscriptionQuery = @"SELECT COUNT(*) FROM [SUBSCRIPTION] WHERE [USER_ID] = @USER_ID";
+            var subscription = await _context.SUBSCRIBES
+                .Where(s => s.USER_ID == dto.USER_ID)
+                .FirstOrDefaultAsync();
 
-            string insertSubscriptionQuery = @"
-                INSERT INTO [SUBSCRIPTION] ([OCEAN_POLLUTION], [OIL_REPORT], [SATELLITE_IMAGES], [SUB_AT], [USER_ID])
-                VALUES (@OCEAN_POLLUTION, @OIL_REPORT, @SATELLITE_IMAGES, GETDATE(), @USER_ID)";
+            if (subscription == null)
+            {
+                return new SubscriptionDto
+                {
+                    USER_ID = dto.USER_ID,
+                    OCEAN_POLLUTION = 0,
+                    OIL_REPORT = 0,
+                    SATELLITE_IMAGES = 0
+                };
+            }
 
-            string updateSubscriptionQuery = @"
-                UPDATE [SUBSCRIPTION]
-                SET [OCEAN_POLLUTION] = @OCEAN_POLLUTION,
-                    [OIL_REPORT] = @OIL_REPORT,
-                    [SATELLITE_IMAGES] = @SATELLITE_IMAGES,
-                    [SUB_AT] = GETDATE()
-                WHERE [USER_ID] = @USER_ID;";
+            return new SubscriptionDto
+            {
+                USER_ID = subscription.USER_ID,
+                OCEAN_POLLUTION = subscription.OCEAN_POLLUTION,
+                OIL_REPORT = subscription.OIL_REPORT,
+                SATELLITE_IMAGES = subscription.SATELLITE
+            };
+        }
 
-            //using (var connection = new SqlConnection(_connectionStrings.DefaultConnection))
-            //{
-            //    try
-            //    {
-            //        await connection.OpenAsync();
+        public async Task Update(SUBSCRIBE subscribe)
+        {
+            // 先檢查 USERS 表中是否有這個 USER_ID
+            var existingUser = await _context.USERS
+                .Where(u => u.USER_ID == subscribe.USER_ID)
+                .FirstOrDefaultAsync();
 
-            //        // 檢查 userProfile 表
-            //        using (var checkCommand = new SqlCommand(checkSubscriptionQuery, connection))
-            //        {
-            //            checkCommand.Parameters.Add(new SqlParameter("@USER_ID", dto.USER_ID));
-            //            int userCount = (int)await checkCommand.ExecuteScalarAsync();
+            if (existingUser == null)
+            {
+                throw new Exception($"❌ 找不到 USER_ID = {subscribe.USER_ID}，無法更新訂閱記錄！");
+            }
 
-            //            // 如果 userProfile 不存在，插入新資料
-            //            if (userCount == 0)
-            //            {
-            //                using (var insertCommand = new SqlCommand(insertSubscriptionQuery, connection))
-            //                {
-            //                    insertCommand.Parameters.Add(new SqlParameter("@USER_ID", dto.USER_ID));
-            //                    insertCommand.Parameters.Add(new SqlParameter("@OCEAN_POLLUTION", dto.OCEAN_POLLUTION));
-            //                    insertCommand.Parameters.Add(new SqlParameter("@OIL_REPORT", dto.OIL_REPORT));
-            //                    insertCommand.Parameters.Add(new SqlParameter("@SATELLITE_IMAGES", dto.SATELLITE_IMAGES));
-            //                    await insertCommand.ExecuteNonQueryAsync();
-            //                }
-            //            }
-            //            else
-            //            {
-            //                using (var updateCommand = new SqlCommand(updateSubscriptionQuery, connection))
-            //                {
-            //                    updateCommand.Parameters.Add(new SqlParameter("@USER_ID", dto.USER_ID));
-            //                    updateCommand.Parameters.Add(new SqlParameter("@OCEAN_POLLUTION", dto.OCEAN_POLLUTION));
-            //                    updateCommand.Parameters.Add(new SqlParameter("@OIL_REPORT", dto.OIL_REPORT));
-            //                    updateCommand.Parameters.Add(new SqlParameter("@SATELLITE_IMAGES", dto.SATELLITE_IMAGES));
-            //                    await updateCommand.ExecuteNonQueryAsync();
-            //                }
-            //            }
-            //        }
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        throw new Exception("Database error", ex);
-            //    }
-            //}
+            // 查詢是否已經有訂閱記錄
+            var existingSubscription = await _context.SUBSCRIBES
+                .Where(s => s.USER_ID == subscribe.USER_ID)
+                .FirstOrDefaultAsync();
+
+            if (existingSubscription == null)
+            {
+                // 插入新的訂閱記錄
+                var newSubscription = new SUBSCRIBE
+                {
+                    USER_ID = subscribe.USER_ID,
+                    OCEAN_POLLUTION = subscribe.OCEAN_POLLUTION,
+                    OIL_REPORT = subscribe.OIL_REPORT,
+                    SATELLITE = subscribe.SATELLITE,
+                };
+
+                _context.SUBSCRIBES.Add(newSubscription);
+            }
+            else
+            {
+                // 更新現有訂閱記錄
+                existingSubscription.OCEAN_POLLUTION = subscribe.OCEAN_POLLUTION;
+                existingSubscription.OIL_REPORT = subscribe.OIL_REPORT;
+                existingSubscription.SATELLITE = subscribe.SATELLITE;
+
+                _context.SUBSCRIBES.Update(existingSubscription);
+            }
+
+            await _context.SaveChangesAsync();
         }
     }
 }

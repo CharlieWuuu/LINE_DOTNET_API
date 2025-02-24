@@ -4,4 +4,7 @@
     <ActiveDebugProfile>Container (Dockerfile)</ActiveDebugProfile>
     <NameOfLastUsedPublishProfile>D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\Properties\PublishProfiles\registry.hub.docker.com.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
 </Project>
