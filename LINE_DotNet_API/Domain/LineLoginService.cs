@@ -109,24 +109,34 @@ namespace LINE_DotNet_API.Domain
                 throw new ArgumentException("❌ userData 為 null 或 EMAIL 為空");
             }
 
-            // 產生 6 位數驗證碼
-            var verifyCode = new Random().Next(100000, 999999).ToString();
+            var existingEmail = await _context.USERS.FirstOrDefaultAsync(u => u.EMAIL == userData.EMAIL);
 
-            // 儲存驗證碼到資料庫
-            var verifyEntry = new EMAIL_VERIFICATION
+            if (existingEmail != null)
             {
-                EMAIL = userData.EMAIL,
-                CODE = verifyCode,
-                EXPIRES_AT = DateTime.UtcNow.AddMinutes(5), // 設定 5 分鐘內有效
-                IS_VERIFIED = 0
-            };
 
-            _context.EMAIL_VERIFICATIONS.Add(verifyEntry);
-            await _context.SaveChangesAsync();
+                // 產生 6 位數驗證碼
+                var verifyCode = new Random().Next(100000, 999999).ToString();
 
-            bool emailSent = await SendEmailAsync(verifyEntry);
+                // 儲存驗證碼到資料庫
+                var verifyEntry = new EMAIL_VERIFICATION
+                {
+                    EMAIL = userData.EMAIL,
+                    CODE = verifyCode,
+                    EXPIRES_AT = DateTime.UtcNow.AddMinutes(5), // 設定 5 分鐘內有效
+                    IS_VERIFIED = 0
+                };
 
-            return emailSent;
+                _context.EMAIL_VERIFICATIONS.Add(verifyEntry);
+                await _context.SaveChangesAsync();
+
+                bool emailSent = await SendEmailAsync(verifyEntry);
+
+                return emailSent;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>

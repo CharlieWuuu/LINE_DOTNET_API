@@ -82,7 +82,7 @@
             檢查使用者輸入的驗證碼
             </summary>
         </member>
-        <member name="M:LINE_DotNet_API.Domain.LineLoginService.SaveUser(LINE_DotNet_API.Dtos.USER)">
+        <member name="M:LINE_DotNet_API.Domain.LineLoginService.LoginUser(LINE_DotNet_API.Dtos.USER)">
             <summary>
             儲存或更新使用者資料，並紀錄登入紀錄
             </summary>
