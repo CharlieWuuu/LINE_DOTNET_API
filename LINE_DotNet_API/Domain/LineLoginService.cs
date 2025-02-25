@@ -152,9 +152,7 @@ namespace LINE_DotNet_API.Domain
             }
 
             var verifyEntry = await _context.EMAIL_VERIFICATIONS
-                .Where(v => v.EMAIL == emailVerification.EMAIL && v.CODE == emailVerification.CODE)
-                .OrderByDescending(v => v.EXPIRES_AT)
-                .FirstOrDefaultAsync();
+                .FirstOrDefaultAsync((v => v.EMAIL == emailVerification.EMAIL && v.CODE == emailVerification.CODE));
 
             if (verifyEntry == null || verifyEntry.EXPIRES_AT < DateTime.UtcNow)
             {
@@ -163,10 +161,11 @@ namespace LINE_DotNet_API.Domain
 
             // 設定驗證成功
             verifyEntry.IS_VERIFIED = 1;
+            await _context.SaveChangesAsync();
 
             // 儲存 COMBINE_LINE
             var existingUser = await _context.USERS.FirstOrDefaultAsync(u => u.EMAIL == emailVerification.EMAIL);
-            if (existingUser != null) { 
+            if (existingUser != null) {
                 existingUser.COMBINE_LINE = 1;
             }
 
