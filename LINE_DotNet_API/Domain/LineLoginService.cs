@@ -184,12 +184,11 @@ namespace LINE_DotNet_API.Domain
             }
 
             var existingUser = await _context.USERS
-                .FirstOrDefaultAsync(u => u.EMAIL == userData.EMAIL);
+                .FirstOrDefaultAsync(u => u.LINE_ID == userData.LINE_ID);
 
             if (existingUser != null)
             {
                 // 更新 LINE 資訊
-                existingUser.LINE_ID = userData.LINE_ID;
                 existingUser.LINE_DISPLAY_NAME = userData.LINE_DISPLAY_NAME;
 
                 // 紀錄登入時間（存 UTC 時間，讀取時轉回當地時間）
