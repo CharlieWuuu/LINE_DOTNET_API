@@ -44,11 +44,31 @@ namespace LINE_DotNet_API.Controllers
 			return await _lineLoginService.GetUserProfileByIdToken(idToken);
 		}
 
-		// 使用 id token 取得 user profile
-		[HttpPost("CheckAndSaveUser")]
-		public async Task<string> CheckAndSaveUser(USER userData)
+        // 使用 id token 取得 user profile
+        [HttpPost("CheckUserCombineLine")]
+        public async Task<bool> CheckAndSaveUser(USER userData)
+        {
+            return await _lineLoginService.CheckUserCombineLine(userData);
+        }
+
+        // 使用 id token 取得 user profile
+        [HttpPost("SendVerifyCode")]
+        public async Task<bool> SendVerifyCode(USER userData)
+        {
+            return await _lineLoginService.SendVerifyCode(userData);
+        }
+
+        // 使用 id token 取得 user profile
+        [HttpPost("CheckVerifyCode")]
+		public async Task<bool> CheckVerifyCode(EMAIL_VERIFICATION emailVerification)
 		{
-			return await _lineLoginService.CheckAndSaveUser(userData);
+			return await _lineLoginService.CheckVerifyCode(emailVerification);
 		}
-	}
+
+        [HttpPost("SaveUser")]
+        public async Task<string> SaveUser(USER userData)
+        {
+            return await _lineLoginService.LoginUser(userData);
+        }
+    }
 }

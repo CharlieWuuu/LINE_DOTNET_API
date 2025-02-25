@@ -9,8 +9,10 @@ namespace LINE_DotNet_API.Dtos
 		public DbSet<USER> USERS { get; set; }
 		public DbSet<USER_LOGIN> USER_LOGINS { get; set; }
 		public DbSet<SUBSCRIBE> SUBSCRIBES { get; set; }
+		public DbSet<EMAIL_VERIFICATION> EMAIL_VERIFICATIONS { get; set; }
 
-		protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.Entity<USER>()
 				.HasKey(u => u.USER_ID);
@@ -20,6 +22,9 @@ namespace LINE_DotNet_API.Dtos
 
 			modelBuilder.Entity<SUBSCRIBE>()
 				.HasKey(s => s.USER_ID);
-		}
+
+            modelBuilder.Entity<EMAIL_VERIFICATION>()
+				.HasKey(s => s.EMAIL);
+        }
 	}
 }

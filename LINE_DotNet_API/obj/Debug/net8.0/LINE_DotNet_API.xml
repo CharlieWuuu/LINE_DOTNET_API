@@ -67,6 +67,26 @@
             <typeparam name="T"></typeparam>
             <param name="request"></param>
         </member>
+        <member name="M:LINE_DotNet_API.Domain.LineLoginService.CheckUserCombineLine(LINE_DotNet_API.Dtos.USER)">
+            <summary>
+            檢查使用者是否已經綁定 LINE
+            </summary>
+        </member>
+        <member name="M:LINE_DotNet_API.Domain.LineLoginService.SendVerifyCode(LINE_DotNet_API.Dtos.USER)">
+            <summary>
+            發送驗證碼到使用者信箱
+            </summary>
+        </member>
+        <member name="M:LINE_DotNet_API.Domain.LineLoginService.CheckVerifyCode(LINE_DotNet_API.Dtos.EMAIL_VERIFICATION)">
+            <summary>
+            檢查使用者輸入的驗證碼
+            </summary>
+        </member>
+        <member name="M:LINE_DotNet_API.Domain.LineLoginService.SaveUser(LINE_DotNet_API.Dtos.USER)">
+            <summary>
+            儲存或更新使用者資料，並紀錄登入紀錄
+            </summary>
+        </member>
         <member name="T:LINE_DotNet_API.Dtos.WebhookRequestBodyDto">
             <summary>
             對應 LINE 訊息的完整結構

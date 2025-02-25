@@ -1,4 +1,6 @@
+using System.Net;
 using System.Net.Http.Headers;
+using System.Net.Mail;
 using System.Web;
 using LINE_DotNet_API.Dtos;
 using LINE_DotNet_API.Providers;
@@ -76,7 +78,88 @@ namespace LINE_DotNet_API.Domain
             return dto;
         }
 
-        public async Task<string> CheckAndSaveUser(USER userData)
+        /// <summary>
+        /// 檢查使用者是否已經綁定 LINE
+        /// </summary>
+        public async Task<bool> CheckUserCombineLine(USER userData)
+        {
+            if (userData == null)
+            {
+                throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
+            }
+
+            var existingUser = await _context.USERS
+                .FirstOrDefaultAsync(u => u.EMAIL == userData.EMAIL);
+
+            if (existingUser == null)
+            {
+                return false;
+            }
+
+            return existingUser.COMBINE_LINE == 1;
+        }
+
+        /// <summary>
+        /// 發送驗證碼到使用者信箱
+        /// </summary>
+        public async Task<bool> SendVerifyCode(USER userData)
+        {
+            if (userData == null || string.IsNullOrWhiteSpace(userData.EMAIL))
+            {
+                throw new ArgumentException("❌ userData 為 null 或 EMAIL 為空");
+            }
+
+            // 產生 6 位數驗證碼
+            var verifyCode = new Random().Next(100000, 999999).ToString();
+
+            // 儲存驗證碼到資料庫
+            var verifyEntry = new EMAIL_VERIFICATION
+            {
+                EMAIL = userData.EMAIL,
+                CODE = verifyCode,
+                EXPIRES_AT = DateTime.UtcNow.AddMinutes(5), // 設定 5 分鐘內有效
+                IS_VERIFIED = 0
+            };
+
+            _context.EMAIL_VERIFICATIONS.Add(verifyEntry);
+            await _context.SaveChangesAsync();
+
+            bool emailSent = await SendEmailAsync(verifyEntry);
+
+            return emailSent;
+        }
+
+        /// <summary>
+        /// 檢查使用者輸入的驗證碼
+        /// </summary>
+        public async Task<bool> CheckVerifyCode(EMAIL_VERIFICATION emailVerification)
+        {
+            if (string.IsNullOrWhiteSpace(emailVerification.EMAIL) || string.IsNullOrWhiteSpace(emailVerification.CODE))
+            {
+                throw new ArgumentException("❌ email 或 code 不能為空");
+            }
+
+            var verifyEntry = await _context.EMAIL_VERIFICATIONS
+                .Where(v => v.EMAIL == emailVerification.EMAIL && v.CODE == emailVerification.CODE)
+                .OrderByDescending(v => v.EXPIRES_AT)
+                .FirstOrDefaultAsync();
+
+            if (verifyEntry == null || verifyEntry.EXPIRES_AT < DateTime.UtcNow)
+            {
+                return false; // 驗證碼不存在或已過期
+            }
+
+            // 設定驗證成功
+            verifyEntry.IS_VERIFIED = 1;
+            await _context.SaveChangesAsync();
+
+            return true;
+        }
+
+        /// <summary>
+        /// 儲存或更新使用者資料，並紀錄登入紀錄
+        /// </summary>
+        public async Task<string> LoginUser(USER userData)
         {
             if (userData == null)
             {
@@ -88,22 +171,119 @@ namespace LINE_DotNet_API.Domain
 
             if (existingUser != null)
             {
+                // 更新 LINE 資訊
                 existingUser.LINE_ID = userData.LINE_ID;
                 existingUser.LINE_DISPLAY_NAME = userData.LINE_DISPLAY_NAME;
-                existingUser.COMBINE_LINE = 1;
 
+                // 紀錄登入時間（存 UTC 時間，讀取時轉回當地時間）
                 var newLogin = new USER_LOGIN
                 {
                     USER_ID = existingUser.USER_ID,
-                    LOGIN_TIME = DateTime.UtcNow,
+                    LOGIN_TIME = DateTime.UtcNow // 以 UTC 儲存
                 };
 
                 _context.USER_LOGINS.Add(newLogin);
                 await _context.SaveChangesAsync();
             }
+            else
+            {
+                // 如果使用者不存在，可以選擇新增
+                return "User not found";
+            }
 
             return "Success";
         }
-    }
+
+        private async Task<bool> SendEmailAsync(EMAIL_VERIFICATION emailVerification)
+        {
+            try
+            {
+                var smtpClient = new SmtpClient("smtp.gmail.com")
+                {
+                    Port = 587, // 或 465 (SSL)
+                    Credentials = new NetworkCredential("charliewu500@gmail.com", "wquxvwremdazsvtr"),
+                    EnableSsl = true,
+                };
+
+
+                var mailMessage = new MailMessage
+                {
+                    From = new MailAddress("charliewu500@gmail.com"),
+                    Subject = "您的驗證碼",
+                    Body = $"您的驗證碼為：{emailVerification.CODE}，請在 5 分鐘內輸入完成驗證。",
+                    IsBodyHtml = true,
+                };
+
+                mailMessage.To.Add(emailVerification.EMAIL);
+
+                await smtpClient.SendMailAsync(mailMessage);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }   
+
+
+    //public async Task<Boolean> CheckUserCombineLine(USER userData)
+    //{
+    //    if (userData == null)
+    //    {
+    //        throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
+    //    }
+
+    //    var existingUser = await _context.USERS
+    //        .FirstOrDefaultAsync(u => u.EMAIL == userData.EMAIL); await _context.SaveChangesAsync();
+
+    //    if (existingUser.COMBINE_LINE == 0)
+    //    {
+    //        return false;
+    //    }
+    //    else 
+    //    {
+    //        return true; 
+    //    }                
+    //}
+
+    //public async Task<Boolean> SendVerifyCode(USER userData)
+    //{
+
+    //}
+
+    //public async Task<Boolean> CheckVerifyCode(USER userData)
+    //{
+
+    //}
+
+    //public async Task<string> SaveUser(USER userData)
+    //{
+    //    if (userData == null)
+    //    {
+    //        throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
+    //    }
+
+    //    var existingUser = await _context.USERS
+    //        .FirstOrDefaultAsync(u => u.EMAIL == userData.EMAIL);
+
+    //    if (existingUser != null)
+    //    {
+    //        existingUser.LINE_ID = userData.LINE_ID;
+    //        existingUser.LINE_DISPLAY_NAME = userData.LINE_DISPLAY_NAME;
+    //        existingUser.COMBINE_LINE = 1;
+
+    //        var newLogin = new USER_LOGIN
+    //        {
+    //            USER_ID = existingUser.USER_ID,
+    //            LOGIN_TIME = DateTime.UtcNow,
+    //        };
+
+    //        _context.USER_LOGINS.Add(newLogin);
+    //        await _context.SaveChangesAsync();
+    //    }
+
+    //    return "Success";
+    //}
+}
 }
 
