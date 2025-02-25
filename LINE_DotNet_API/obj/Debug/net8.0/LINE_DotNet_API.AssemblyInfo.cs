@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LINE_DotNet_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17299c238091cdf8c14873dd09c8728e380a1669")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+caf3cbab2e6f8074a50d1f971ebb0fd017c842ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("LINE_DotNet_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LINE_DotNet_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

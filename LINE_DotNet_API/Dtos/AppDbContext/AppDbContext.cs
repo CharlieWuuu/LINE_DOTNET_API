@@ -21,7 +21,7 @@ namespace LINE_DotNet_API.Dtos
 				.HasKey(ul => new { ul.USER_ID, ul.LOGIN_TIME });
 
 			modelBuilder.Entity<SUBSCRIBE>()
-				.HasKey(s => s.USER_ID);
+				.HasKey(s => s.LINE_ID);
 
             modelBuilder.Entity<EMAIL_VERIFICATION>()
 				.HasKey(s => s.EMAIL);

@@ -6,7 +6,7 @@ namespace LINE_DotNet_API.Dtos
 	{
 		[Key]
 		[MaxLength(100)]
-		public string USER_ID { get; set; }
+		public string LINE_ID { get; set; }
 		public int OCEAN_POLLUTION { get; set; }
 		public int OIL_REPORT { get; set; }
 		public int SATELLITE { get; set; }
