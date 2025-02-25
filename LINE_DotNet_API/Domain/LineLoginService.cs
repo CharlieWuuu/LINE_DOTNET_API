@@ -96,7 +96,7 @@ namespace LINE_DotNet_API.Domain
                 return false;
             }
 
-            return existingUser.COMBINE_LINE == 1;
+            return true;
         }
 
         /// <summary>
@@ -151,6 +151,13 @@ namespace LINE_DotNet_API.Domain
 
             // 設定驗證成功
             verifyEntry.IS_VERIFIED = 1;
+
+            // 儲存 COMBINE_LINE
+            var existingUser = await _context.USERS.FirstOrDefaultAsync(u => u.EMAIL == emailVerification.EMAIL);
+            if (existingUser != null) { 
+                existingUser.COMBINE_LINE = 1;
+            }
+
             await _context.SaveChangesAsync();
 
             return true;
@@ -223,67 +230,67 @@ namespace LINE_DotNet_API.Domain
             {
                 return false;
             }
-        }   
+        }
 
 
-    //public async Task<Boolean> CheckUserCombineLine(USER userData)
-    //{
-    //    if (userData == null)
-    //    {
-    //        throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
-    //    }
+        //public async Task<Boolean> CheckUserCombineLine(USER userData)
+        //{
+        //    if (userData == null)
+        //    {
+        //        throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
+        //    }
 
-    //    var existingUser = await _context.USERS
-    //        .FirstOrDefaultAsync(u => u.EMAIL == userData.EMAIL); await _context.SaveChangesAsync();
+        //    var existingUser = await _context.USERS
+        //        .FirstOrDefaultAsync(u => u.EMAIL == userData.EMAIL); await _context.SaveChangesAsync();
 
-    //    if (existingUser.COMBINE_LINE == 0)
-    //    {
-    //        return false;
-    //    }
-    //    else 
-    //    {
-    //        return true; 
-    //    }                
-    //}
+        //    if (existingUser.COMBINE_LINE == 0)
+        //    {
+        //        return false;
+        //    }
+        //    else 
+        //    {
+        //        return true; 
+        //    }                
+        //}
 
-    //public async Task<Boolean> SendVerifyCode(USER userData)
-    //{
+        //public async Task<Boolean> SendVerifyCode(USER userData)
+        //{
 
-    //}
+        //}
 
-    //public async Task<Boolean> CheckVerifyCode(USER userData)
-    //{
+        //public async Task<Boolean> CheckVerifyCode(USER userData)
+        //{
 
-    //}
+        //}
 
-    //public async Task<string> SaveUser(USER userData)
-    //{
-    //    if (userData == null)
-    //    {
-    //        throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
-    //    }
+        //public async Task<string> SaveUser(USER userData)
+        //{
+        //    if (userData == null)
+        //    {
+        //        throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
+        //    }
 
-    //    var existingUser = await _context.USERS
-    //        .FirstOrDefaultAsync(u => u.EMAIL == userData.EMAIL);
+        //    var existingUser = await _context.USERS
+        //        .FirstOrDefaultAsync(u => u.EMAIL == userData.EMAIL);
 
-    //    if (existingUser != null)
-    //    {
-    //        existingUser.LINE_ID = userData.LINE_ID;
-    //        existingUser.LINE_DISPLAY_NAME = userData.LINE_DISPLAY_NAME;
-    //        existingUser.COMBINE_LINE = 1;
+        //    if (existingUser != null)
+        //    {
+        //        existingUser.LINE_ID = userData.LINE_ID;
+        //        existingUser.LINE_DISPLAY_NAME = userData.LINE_DISPLAY_NAME;
+        //        existingUser.COMBINE_LINE = 1;
 
-    //        var newLogin = new USER_LOGIN
-    //        {
-    //            USER_ID = existingUser.USER_ID,
-    //            LOGIN_TIME = DateTime.UtcNow,
-    //        };
+        //        var newLogin = new USER_LOGIN
+        //        {
+        //            USER_ID = existingUser.USER_ID,
+        //            LOGIN_TIME = DateTime.UtcNow,
+        //        };
 
-    //        _context.USER_LOGINS.Add(newLogin);
-    //        await _context.SaveChangesAsync();
-    //    }
+        //        _context.USER_LOGINS.Add(newLogin);
+        //        await _context.SaveChangesAsync();
+        //    }
 
-    //    return "Success";
-    //}
-}
+        //    return "Success";
+        //}
+    }
 }
 
