@@ -65,8 +65,8 @@ namespace LINE_DotNet_API.Controllers
 			return await _lineLoginService.CheckVerifyCode(emailVerification);
 		}
 
-        [HttpPost("SaveUser")]
-        public async Task<string> SaveUser(USER userData)
+        [HttpPost("LoginUser")]
+        public async Task<string> LoginUser(USER userData)
         {
             return await _lineLoginService.LoginUser(userData);
         }
