@@ -84,7 +84,7 @@ namespace LINE_DotNet_API.Domain
             }
 
             var existingUser = await _context.USERS
-                .FirstOrDefaultAsync(u => u.USER_ID == userData.USER_ID);
+                .FirstOrDefaultAsync(u => u.EMAIL == userData.EMAIL);
 
             if (existingUser != null)
             {
@@ -92,6 +92,13 @@ namespace LINE_DotNet_API.Domain
                 existingUser.LINE_DISPLAY_NAME = userData.LINE_DISPLAY_NAME;
                 existingUser.COMBINE_LINE = 1;
 
+                var newLogin = new USER_LOGIN
+                {
+                    USER_ID = existingUser.USER_ID,
+                    LOGIN_TIME = DateTime.UtcNow,
+                };
+
+                _context.USER_LOGINS.Add(newLogin);
                 await _context.SaveChangesAsync();
             }
 
