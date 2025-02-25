@@ -25,7 +25,6 @@ namespace LINE_DotNet_API.Services
             {
                 return new SubscriptionDto
                 {
-                    USER_ID = dto.USER_ID,
                     OCEAN_POLLUTION = 0,
                     OIL_REPORT = 0,
                     SATELLITE_IMAGES = 0
@@ -34,7 +33,6 @@ namespace LINE_DotNet_API.Services
 
             return new SubscriptionDto
             {
-                USER_ID = subscription.USER_ID,
                 OCEAN_POLLUTION = subscription.OCEAN_POLLUTION,
                 OIL_REPORT = subscription.OIL_REPORT,
                 SATELLITE_IMAGES = subscription.SATELLITE
