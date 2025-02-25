@@ -89,7 +89,7 @@ namespace LINE_DotNet_API.Domain
             }
 
             var existingUser = await _context.USERS
-                .FirstOrDefaultAsync(u => u.EMAIL == userData.EMAIL);
+                .FirstOrDefaultAsync(u => u.LINE_ID == userData.EMAIL);
 
             if (existingUser == null)
             {
