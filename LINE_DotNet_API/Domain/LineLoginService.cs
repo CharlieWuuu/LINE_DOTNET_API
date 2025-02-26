@@ -147,7 +147,7 @@ namespace LINE_DotNet_API.Domain
         public async Task<bool> CheckVerifyCode(string EMAIL, string CODE, string LINE_ID, string LINE_DISPLAY_NAME)
         {
             var verifyEntry = await _context.EMAIL_VERIFICATIONS
-                .FirstOrDefaultAsync((v => v.EMAIL == EMAIL && v.CODE == CODE));
+                .FirstOrDefaultAsync(v => v.EMAIL == EMAIL && v.CODE == CODE);
 
             if (verifyEntry == null || verifyEntry.EXPIRES_AT < DateTime.UtcNow)
             {
