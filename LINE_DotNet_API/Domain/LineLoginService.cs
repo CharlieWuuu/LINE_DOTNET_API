@@ -78,28 +78,28 @@ namespace LINE_DotNet_API.Domain
             return dto;
         }
 
-        // /// <summary>
-        // /// 檢查使用者是否已經綁定 LINE
-        // /// </summary>
-        // public async Task<bool> CheckUserCombineLine(USER userData)
-        // {
-        //     if (userData == null)
-        //     {
-        //         throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
-        //     }
+        /// <summary>
+        /// 檢查使用者是否已經綁定 LINE
+        /// </summary>
+        public async Task<bool> CheckUserCombineLine(USER userData)
+        {
+            if (userData == null)
+            {
+                throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
+            }
 
-        //     var existingUser = await _context.USERS
-        //         .FirstOrDefaultAsync(u => u.LINE_ID == userData.LINE_ID);
+            var existingUser = await _context.USERS
+                .FirstOrDefaultAsync(u => u.LINE_ID == userData.LINE_ID);
 
-        //     if (existingUser == null)
-        //     {
-        //         return false;
-        //     }
-        //     else
-        //     {
-        //         return true;
-        //     }
-        // }
+            if (existingUser == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
         /// <summary>
         /// 發送驗證碼到使用者信箱
