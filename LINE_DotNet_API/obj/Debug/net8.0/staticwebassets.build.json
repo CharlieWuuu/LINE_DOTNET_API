@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "e59zAXnkIugHEVG4o5PhTyP+JqlHw2I34vOJ2VKJFqg=",
+  "Hash": "EjecAziZ2fPUU8PxuGIEw8zWTVs3Vn5su3YdhZSgD7M=",
   "Source": "LINE_DotNet_API",
   "BasePath": "_content/LINE_DotNet_API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

@@ -1,99 +1,201 @@
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\appsettings.Development.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\appsettings.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\Audio.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\flexCarousel.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\Image.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\Imagemap.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\Location.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\multicast.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\RichiMenu_Subscription.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\RichMenu_1.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\RichMenu_2.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\Sticker.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\template.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\Text.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Test\Json\Video.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\LINE_DotNet_API.exe
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\LINE_DotNet_API.deps.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\LINE_DotNet_API.runtimeconfig.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\LINE_DotNet_API.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\LINE_DotNet_API.pdb
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\LINE_DotNet_API.xml
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Azure.Core.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Azure.Identity.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Npgsql.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\System.ClientModel.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\System.Memory.Data.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.csproj.AssemblyReference.cache
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.GeneratedMSBuildEditorConfig.editorconfig
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.AssemblyInfoInputs.cache
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.AssemblyInfo.cs
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.csproj.CoreCompileInputs.cache
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.MvcApplicationPartsAssemblyInfo.cs
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.MvcApplicationPartsAssemblyInfo.cache
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.sourcelink.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\scopedcss\bundle\LINE_DotNet_API.styles.css
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\staticwebassets.build.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\staticwebassets.development.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\staticwebassets\msbuild.LINE_DotNet_API.Microsoft.AspNetCore.StaticWebAssets.props
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\staticwebassets\msbuild.build.LINE_DotNet_API.props
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LINE_DotNet_API.props
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LINE_DotNet_API.props
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\staticwebassets.pack.json
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_Dot.DDBF3D3B.Up2Date
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\refint\LINE_DotNet_API.dll
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.xml
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.pdb
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\LINE_DotNet_API.genruntimeconfig.cache
-D:\03Learning\57_LINE_DotNet\LINE_DotNet_API\LINE_DotNet_API\obj\Debug\net8.0\ref\LINE_DotNet_API.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/appsettings.Development.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/appsettings.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Audio.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/flexCarousel.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Image.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Imagemap.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Location.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/multicast.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/RichiMenu_Subscription.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/RichMenu_1.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/RichMenu_2.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Sticker.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/template.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Text.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Video.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.exe
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.deps.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.runtimeconfig.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.pdb
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.xml
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Azure.Core.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Azure.Identity.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.OpenApi.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Npgsql.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/System.ClientModel.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/System.Memory.Data.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/System.Runtime.Caching.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/de/Microsoft.Data.SqlClient.resources.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/es/Microsoft.Data.SqlClient.resources.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/fr/Microsoft.Data.SqlClient.resources.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/it/Microsoft.Data.SqlClient.resources.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/ja/Microsoft.Data.SqlClient.resources.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/ko/Microsoft.Data.SqlClient.resources.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/pt-BR/Microsoft.Data.SqlClient.resources.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/ru/Microsoft.Data.SqlClient.resources.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/unix/lib/net8.0/Microsoft.Data.SqlClient.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Runtime.Caching.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.csproj.AssemblyReference.cache
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.GeneratedMSBuildEditorConfig.editorconfig
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.AssemblyInfoInputs.cache
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.AssemblyInfo.cs
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.csproj.CoreCompileInputs.cache
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.MvcApplicationPartsAssemblyInfo.cs
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.MvcApplicationPartsAssemblyInfo.cache
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.sourcelink.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/scopedcss/bundle/LINE_DotNet_API.styles.css
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets.build.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets.development.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets/msbuild.LINE_DotNet_API.Microsoft.AspNetCore.StaticWebAssets.props
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets/msbuild.build.LINE_DotNet_API.props
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.LINE_DotNet_API.props
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.LINE_DotNet_API.props
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets.pack.json
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_Dot.DDBF3D3B.Up2Date
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/refint/LINE_DotNet_API.dll
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.xml
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.pdb
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.genruntimeconfig.cache
+D:/03Learning/57_LINE_DotNet/LINE_DotNet_API/LINE_DotNet_API/obj/Debug/net8.0/ref/LINE_DotNet_API.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/appsettings.Development.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/appsettings.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Audio.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/flexCarousel.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Image.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Imagemap.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Location.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/multicast.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/RichiMenu_Subscription.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/RichMenu_1.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/RichMenu_2.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Sticker.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/template.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Text.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Test/Json/Video.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.staticwebassets.endpoints.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.deps.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.runtimeconfig.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.pdb
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/LINE_DotNet_API.xml
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Azure.Core.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Azure.Identity.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Npgsql.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/System.ClientModel.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/System.Memory.Data.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/System.Runtime.Caching.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/de/Microsoft.Data.SqlClient.resources.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/es/Microsoft.Data.SqlClient.resources.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/fr/Microsoft.Data.SqlClient.resources.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/it/Microsoft.Data.SqlClient.resources.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/ja/Microsoft.Data.SqlClient.resources.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/ko/Microsoft.Data.SqlClient.resources.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/pt-BR/Microsoft.Data.SqlClient.resources.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/ru/Microsoft.Data.SqlClient.resources.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/unix/lib/net8.0/Microsoft.Data.SqlClient.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Runtime.Caching.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.csproj.AssemblyReference.cache
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.GeneratedMSBuildEditorConfig.editorconfig
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.AssemblyInfoInputs.cache
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.AssemblyInfo.cs
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.csproj.CoreCompileInputs.cache
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.MvcApplicationPartsAssemblyInfo.cs
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.MvcApplicationPartsAssemblyInfo.cache
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.sourcelink.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/scopedcss/bundle/LINE_DotNet_API.styles.css
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets.build.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets.development.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets/msbuild.LINE_DotNet_API.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets/msbuild.LINE_DotNet_API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets/msbuild.build.LINE_DotNet_API.props
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.LINE_DotNet_API.props
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.LINE_DotNet_API.props
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_Dot.DDBF3D3B.Up2Date
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/refint/LINE_DotNet_API.dll
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.xml
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.pdb
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/LINE_DotNet_API.genruntimeconfig.cache
+/Users/charlie/Documents/PCMAC/4. 學習/10_LINE/LINE_DOTNET_API/LINE_DotNet_API/obj/Debug/net8.0/ref/LINE_DotNet_API.dll

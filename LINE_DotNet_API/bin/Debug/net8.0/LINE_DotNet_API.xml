@@ -77,7 +77,7 @@
             發送驗證碼到使用者信箱
             </summary>
         </member>
-        <member name="M:LINE_DotNet_API.Domain.LineLoginService.CheckVerifyCode(LINE_DotNet_API.Dtos.EMAIL_VERIFICATION)">
+        <member name="M:LINE_DotNet_API.Domain.LineLoginService.CheckVerifyCode(System.String,System.String,System.String,System.String)">
             <summary>
             檢查使用者輸入的驗證碼
             </summary>
@@ -89,33 +89,33 @@
         </member>
         <member name="T:LINE_DotNet_API.Dtos.WebhookRequestBodyDto">
             <summary>
-            對應 LINE 訊息的完整結構
+            ���� LINE �T�������㵲�c
             </summary>
         </member>
         <member name="T:userDataDto">
             <summary>
-            代表使用者資訊
+            �N���ϥΪ̸�T
             </summary>
             
         </member>
         <member name="T:userDataDto.UserProfileDto">
             <summary>
-            使用者基本資訊
+            �ϥΪ̰򥻸�T
             </summary>
         </member>
         <member name="P:userDataDto.UserProfileDto.UserId">
             <summary>
-            使用者的唯一識別碼
+            �ϥΪ̪��ߤ@�ѧO�X
             </summary>
         </member>
         <member name="T:userDataDto.idTokenProfileDto">
             <summary>
-            使用者其他資訊
+            �ϥΪ̨�L��T
             </summary>
         </member>
         <member name="T:userDataDto.environmentDto">
             <summary>
-            使用者登入環境
+            �ϥΪ̵n�J����
             </summary>
         </member>
     </members>
