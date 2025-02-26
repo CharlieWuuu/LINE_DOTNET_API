@@ -60,9 +60,9 @@ namespace LINE_DotNet_API.Controllers
 
 		// 使用 id token 取得 user profile
 		[HttpPost("CheckVerifyCode")]
-		public async Task<bool> CheckVerifyCode(string EMAIL, string CODE, string LINE_ID, string LINE_DISPLAY_NAME)
+		public async Task<bool> CheckVerifyCode(EMAIL_VERIFICATION emailVerification)
 		{
-			return await _lineLoginService.CheckVerifyCode(EMAIL, CODE, LINE_ID, LINE_DISPLAY_NAME);
+			return await _lineLoginService.CheckVerifyCode(emailVerification);
 		}
 
 		[HttpPost("LoginUser")]

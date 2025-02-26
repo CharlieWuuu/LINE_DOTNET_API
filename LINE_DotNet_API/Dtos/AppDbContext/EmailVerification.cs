@@ -6,5 +6,7 @@
         public string? CODE { get; set; }
         public DateTime? EXPIRES_AT { get; set; }
         public int? IS_VERIFIED { get; set; }
+        public string? LINE_ID { get; set; }
+        public string? LINE_DISPLAY_NAME { get; set; }
     }
 }

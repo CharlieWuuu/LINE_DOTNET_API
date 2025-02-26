@@ -144,10 +144,10 @@ namespace LINE_DotNet_API.Domain
         /// <summary>
         /// 檢查使用者輸入的驗證碼
         /// </summary>
-        public async Task<bool> CheckVerifyCode(string EMAIL, string CODE, string LINE_ID, string LINE_DISPLAY_NAME)
+        public async Task<bool> CheckVerifyCode(EMAIL_VERIFICATION emailVerification)
         {
             var verifyEntry = await _context.EMAIL_VERIFICATIONS
-                .FirstOrDefaultAsync(v => v.EMAIL == EMAIL && v.CODE == CODE);
+                .FirstOrDefaultAsync(v => v.EMAIL == emailVerification.EMAIL && v.CODE == emailVerification.CODE);
 
             if (verifyEntry == null || verifyEntry.EXPIRES_AT < DateTime.UtcNow)
             {
@@ -159,11 +159,11 @@ namespace LINE_DotNet_API.Domain
             await _context.SaveChangesAsync();
 
             // 儲存 COMBINE_LINE
-            var existingUser = await _context.USERS.FirstOrDefaultAsync(u => u.EMAIL == EMAIL);
+            var existingUser = await _context.USERS.FirstOrDefaultAsync(u => u.EMAIL == emailVerification.EMAIL);
             if (existingUser != null)
             {
-                existingUser.LINE_ID = LINE_ID;
-                existingUser.LINE_DISPLAY_NAME = LINE_DISPLAY_NAME;
+                existingUser.LINE_ID = emailVerification.LINE_ID;
+                existingUser.LINE_DISPLAY_NAME = emailVerification.LINE_DISPLAY_NAME;
                 existingUser.COMBINE_LINE = 1;
             }
             await _context.SaveChangesAsync();
