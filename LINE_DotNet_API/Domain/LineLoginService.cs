@@ -176,11 +176,6 @@ namespace LINE_DotNet_API.Domain
         /// </summary>
         public async Task<bool> LoginUser(USER userData)
         {
-            if (userData == null)
-            {
-                throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
-            }
-
             var existingUser = await _context.USERS
                 .FirstOrDefaultAsync(u => u.LINE_ID == userData.LINE_ID);
 

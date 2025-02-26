@@ -60,13 +60,13 @@ namespace LINE_DotNet_API.Controllers
 
 		// 使用 id token 取得 user profile
 		[HttpPost("CheckVerifyCode")]
-		public async Task<bool> CheckVerifyCode(EMAIL_VERIFICATION emailVerification)
+		public async Task<bool> CheckVerifyCode(string EMAIL, string CODE, string LINE_ID, string LINE_DISPLAY_NAME)
 		{
-			return await _lineLoginService.CheckVerifyCode(emailVerification);
+			return await _lineLoginService.CheckVerifyCode(EMAIL, CODE, LINE_ID, LINE_DISPLAY_NAME);
 		}
 
 		[HttpPost("LoginUser")]
-		public async Task<string> LoginUser(USER userData)
+		public async Task<bool> LoginUser(USER userData)
 		{
 			return await _lineLoginService.LoginUser(userData);
 		}
