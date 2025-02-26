@@ -19,17 +19,16 @@ namespace LINE_DotNet_API.Controllers
 
         // 取得訂閱資訊
         [HttpPost("Fetch")]
-        public async Task<SubscriptionDto> Fetch([FromBody] SUBSCRIBE dto)
+        public async Task<SUBSCRIBE> Fetch([FromBody] SUBSCRIBE dto)
         {
             return await _subscribeService.Fetch(dto);
         }
 
         // 更新訂閱資訊
         [HttpPost("Update")]
-        public async Task<IActionResult> Update([FromBody] SUBSCRIBE subscribe)
+        public async Task<bool> Update([FromBody] SUBSCRIBE subscribe)
         {
-            await _subscribeService.Update(subscribe);
-            return Ok();
+            return await _subscribeService.Update(subscribe);
         }
     }
 }

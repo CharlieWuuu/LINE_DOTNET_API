@@ -15,7 +15,7 @@ namespace LINE_DotNet_API.Services
         }
 
         // 取得訂閱資訊
-        public async Task<SubscriptionDto> Fetch(SUBSCRIBE dto)
+        public async Task<SUBSCRIBE> Fetch(SUBSCRIBE dto)
         {
             var subscription = await _context.SUBSCRIBES
                 .Where(s => s.LINE_ID == dto.LINE_ID)
@@ -23,25 +23,25 @@ namespace LINE_DotNet_API.Services
 
             if (subscription == null)
             {
-                return new SubscriptionDto
+                return new SUBSCRIBE
                 {
-                    USER_ID = dto.LINE_ID,
+                    LINE_ID = dto.LINE_ID,
                     OCEAN_POLLUTION = 0,
                     OIL_REPORT = 0,
-                    SATELLITE_IMAGES = 0
+                    SATELLITE = 0
                 };
             }
 
-            return new SubscriptionDto
+            return new SUBSCRIBE
             {
-                USER_ID = subscription.LINE_ID,
+                LINE_ID = subscription.LINE_ID,
                 OCEAN_POLLUTION = subscription.OCEAN_POLLUTION,
                 OIL_REPORT = subscription.OIL_REPORT,
-                SATELLITE_IMAGES = subscription.SATELLITE
+                SATELLITE = subscription.SATELLITE
             };
         }
 
-        public async Task Update(SUBSCRIBE subscribe)
+        public async Task<bool> Update(SUBSCRIBE subscribe)
         {
             // 先檢查 USERS 表中是否有這個 LINE_ID
             var existingUser = await _context.USERS
@@ -81,7 +81,15 @@ namespace LINE_DotNet_API.Services
                 _context.SUBSCRIBES.Update(existingSubscription);
             }
 
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new Exception($"❌ 更新訂閱記錄時發生錯誤：{ex.Message}");
+            }
         }
     }
 }
