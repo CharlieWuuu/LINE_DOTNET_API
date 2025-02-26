@@ -9,15 +9,15 @@ namespace LINE_DotNet_API.Controllers
 	[ApiController]
 	public class LineLoginController : ControllerBase
 	{
-        private readonly LineLoginService _lineLoginService;
+		private readonly LineLoginService _lineLoginService;
 
-        public LineLoginController(LineLoginService lineLoginService)
-        {
-            _lineLoginService = lineLoginService ?? throw new ArgumentNullException(nameof(lineLoginService));
-        }
+		public LineLoginController(LineLoginService lineLoginService)
+		{
+			_lineLoginService = lineLoginService ?? throw new ArgumentNullException(nameof(lineLoginService));
+		}
 
-        // 取得 Line Login 網址
-        [HttpGet("Url")]
+		// 取得 Line Login 網址
+		[HttpGet("Url")]
 		public string GetLoginUrl([FromQuery] string redirectUrl)
 		{
 			return _lineLoginService.GetLoginUrl(redirectUrl);
@@ -44,31 +44,31 @@ namespace LINE_DotNet_API.Controllers
 			return await _lineLoginService.GetUserProfileByIdToken(idToken);
 		}
 
-        // 使用 id token 取得 user profile
-        [HttpPost("CheckUserCombineLine")]
-        public async Task<bool> CheckAndSaveUser(USER userData)
-        {
-            return await _lineLoginService.CheckUserCombineLine(userData);
-        }
+		// // 使用 id token 取得 user profile
+		// [HttpPost("CheckUserCombineLine")]
+		// public async Task<bool> CheckAndSaveUser(USER userData)
+		// {
+		//     return await _lineLoginService.CheckUserCombineLine(userData);
+		// }
 
-        // 使用 id token 取得 user profile
-        [HttpPost("SendVerifyCode")]
-        public async Task<bool> SendVerifyCode(USER userData)
-        {
-            return await _lineLoginService.SendVerifyCode(userData);
-        }
+		// 使用 id token 取得 user profile
+		[HttpPost("SendVerifyCode")]
+		public async Task<bool> SendVerifyCode(USER userData)
+		{
+			return await _lineLoginService.SendVerifyCode(userData);
+		}
 
-        // 使用 id token 取得 user profile
-        [HttpPost("CheckVerifyCode")]
+		// 使用 id token 取得 user profile
+		[HttpPost("CheckVerifyCode")]
 		public async Task<bool> CheckVerifyCode(EMAIL_VERIFICATION emailVerification)
 		{
 			return await _lineLoginService.CheckVerifyCode(emailVerification);
 		}
 
-        [HttpPost("LoginUser")]
-        public async Task<string> LoginUser(USER userData)
-        {
-            return await _lineLoginService.LoginUser(userData);
-        }
-    }
+		[HttpPost("LoginUser")]
+		public async Task<string> LoginUser(USER userData)
+		{
+			return await _lineLoginService.LoginUser(userData);
+		}
+	}
 }

@@ -78,28 +78,28 @@ namespace LINE_DotNet_API.Domain
             return dto;
         }
 
-        /// <summary>
-        /// 檢查使用者是否已經綁定 LINE
-        /// </summary>
-        public async Task<bool> CheckUserCombineLine(USER userData)
-        {
-            if (userData == null)
-            {
-                throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
-            }
+        // /// <summary>
+        // /// 檢查使用者是否已經綁定 LINE
+        // /// </summary>
+        // public async Task<bool> CheckUserCombineLine(USER userData)
+        // {
+        //     if (userData == null)
+        //     {
+        //         throw new ArgumentNullException(nameof(userData), "❌ userData 為 null");
+        //     }
 
-            var existingUser = await _context.USERS
-                .FirstOrDefaultAsync(u => u.LINE_ID == userData.LINE_ID);
+        //     var existingUser = await _context.USERS
+        //         .FirstOrDefaultAsync(u => u.LINE_ID == userData.LINE_ID);
 
-            if (existingUser == null)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
+        //     if (existingUser == null)
+        //     {
+        //         return false;
+        //     }
+        //     else
+        //     {
+        //         return true;
+        //     }
+        // }
 
         /// <summary>
         /// 發送驗證碼到使用者信箱
@@ -144,15 +144,10 @@ namespace LINE_DotNet_API.Domain
         /// <summary>
         /// 檢查使用者輸入的驗證碼
         /// </summary>
-        public async Task<bool> CheckVerifyCode(EMAIL_VERIFICATION emailVerification)
+        public async Task<bool> CheckVerifyCode(string EMAIL, string CODE, string LINE_ID, string LINE_DISPLAY_NAME)
         {
-            if (string.IsNullOrWhiteSpace(emailVerification.EMAIL) || string.IsNullOrWhiteSpace(emailVerification.CODE))
-            {
-                throw new ArgumentException("❌ email 或 code 不能為空");
-            }
-
             var verifyEntry = await _context.EMAIL_VERIFICATIONS
-                .FirstOrDefaultAsync((v => v.EMAIL == emailVerification.EMAIL && v.CODE == emailVerification.CODE));
+                .FirstOrDefaultAsync((v => v.EMAIL == EMAIL && v.CODE == CODE));
 
             if (verifyEntry == null || verifyEntry.EXPIRES_AT < DateTime.UtcNow)
             {
@@ -164,11 +159,13 @@ namespace LINE_DotNet_API.Domain
             await _context.SaveChangesAsync();
 
             // 儲存 COMBINE_LINE
-            var existingUser = await _context.USERS.FirstOrDefaultAsync(u => u.EMAIL == emailVerification.EMAIL);
-            if (existingUser != null) {
+            var existingUser = await _context.USERS.FirstOrDefaultAsync(u => u.EMAIL == EMAIL);
+            if (existingUser != null)
+            {
+                existingUser.LINE_ID = LINE_ID;
+                existingUser.LINE_DISPLAY_NAME = LINE_DISPLAY_NAME;
                 existingUser.COMBINE_LINE = 1;
             }
-
             await _context.SaveChangesAsync();
 
             return true;
@@ -177,7 +174,7 @@ namespace LINE_DotNet_API.Domain
         /// <summary>
         /// 儲存或更新使用者資料，並紀錄登入紀錄
         /// </summary>
-        public async Task<string> LoginUser(USER userData)
+        public async Task<bool> LoginUser(USER userData)
         {
             if (userData == null)
             {
@@ -204,11 +201,10 @@ namespace LINE_DotNet_API.Domain
             }
             else
             {
-                // 如果使用者不存在，可以選擇新增
-                return "User not found";
+                return false;
             }
 
-            return "Success";
+            return true;
         }
 
         private async Task<bool> SendEmailAsync(EMAIL_VERIFICATION emailVerification)
@@ -257,10 +253,10 @@ namespace LINE_DotNet_API.Domain
         //    {
         //        return false;
         //    }
-        //    else 
+        //    else
         //    {
-        //        return true; 
-        //    }                
+        //        return true;
+        //    }
         //}
 
         //public async Task<Boolean> SendVerifyCode(USER userData)
@@ -303,4 +299,3 @@ namespace LINE_DotNet_API.Domain
         //}
     }
 }
-
