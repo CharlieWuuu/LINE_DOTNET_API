@@ -43,14 +43,14 @@ namespace LINE_DotNet_API.Services
 
         public async Task Update(SUBSCRIBE subscribe)
         {
-            // 先檢查 USERS 表中是否有這個 USER_ID
+            // 先檢查 USERS 表中是否有這個 LINE_ID
             var existingUser = await _context.USERS
                 .Where(u => u.LINE_ID == subscribe.LINE_ID)
                 .FirstOrDefaultAsync();
 
             if (existingUser == null)
             {
-                throw new Exception($"❌ 找不到 USER_ID = {subscribe.LINE_ID}，無法更新訂閱記錄！");
+                throw new Exception($"❌ 找不到 LINE_ID = {subscribe.LINE_ID}，無法更新訂閱記錄！");
             }
 
             // 查詢是否已經有訂閱記錄
